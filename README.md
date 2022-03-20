@@ -22,3 +22,22 @@
 
   When the game is over
   THEN I can save my initials and score
+
+![alt text](./assets/images/startscreen.PNG) start screen before quiz
+
+![alt text](./assets/images/quiz.PNG) quiz in action
+
+# Website link:
+* https://alu1868.github.io/challenge-4-popquiz/
+
+# github link:
+* https://github.com/alu1868/challenge-4-popquiz
+
+# Author:
+* https://github.com/alu1868
+
+# Credits
+* HTML
+* CSS
+* JavaScript
+* BootStrap (https://getbootstrap.com/)
