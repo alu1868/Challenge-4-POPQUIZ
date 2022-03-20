@@ -12,31 +12,52 @@
 <body>
     <!--BEGIN HEADER-->
     <header class="row">
-        <a>View high scores</a>
+        <div class="col-6">
+            <a>View high scores</a>
+        </div>
+
+        <div class="col-6">
+            <a id="timer">time left:</a>
+        </div>
     </header>
 
-    <!--START PROMPT-->
-    <section class="text-center" id="startPrompt">
-        <h2>Coding Quiz Challenge</h2>
-        <p>Try to answer the following code-replatyed questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
-        <button id="startButton">Start Quiz</button>
-    </section>
-
-    <!--QUIZ CONTENT-->
-    <content class="justify-content-center" id="quizContent">
-        <section>
-            <h3>SAMPLE QUESTION</h3>
+    <main class="container rounded m-3 p-3 text-center">
+        <!--START SCREEN-->
+        <section class="text-center container" id="startPrompt">
+            <h2>Coding Quiz Challenge</h2>
+            <p>Try to answer the following code-replatyed questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+            <button id="startButton">Start Quiz</button>
         </section>
 
-        <section>
-            <button class="row">ANSWER CHOICE A</button>
-            <button class="row">ANSWER CHOICE B</button>
-            <button class="row">ANSWER CHOICE C</button>
-            <button class="row">ANSWER CHOICE D</button>
-        </section>
-    </content>
+        <!--QUIZ SCREEN-->
+        <content class="justify-content-center d-none" id="quizContent">
+            <section>
+                <h3 id="question">SAMPLE QUESTION</h3>
+            </section>
 
-    <script src="./assets/js/script.js"></script>
+            <section>
+                <button class="row btn-primary btn-lg" id="btnA">ANSWER CHOICE A</button>
+                <button class="row btn-primary btn-lg" id="btnB">ANSWER CHOICE B</button>
+                <button class="row btn-primary btn-lg" id="btnC">ANSWER CHOICE C</button>
+                <button class="row btn-primary btn-lg" id="btnD">ANSWER CHOICE D</button>
+                <a id="answerKey"></a>
+            </section>
+        </content>
+
+        <!--FINAL SCORE SCREEN-->
+        <content id="scoreScreen" class = "d-none">
+            <h3 id="score">this is the score screen</h3>
+            <button id="tryAgain">try again?</button>
+        </content>
+
+        <!--CORRECT/INCORRECT FOOTER-->
+        <footer>
+            <h4 id="correctIncorrect"></h4>
+        </footer>
+
+    </main>
 </body>
+<script src="./assets/js/script.js"></script>
+
 
 </html>
